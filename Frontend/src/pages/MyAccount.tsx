@@ -72,10 +72,11 @@ const MyAccount: React.FC = () => {
 
             <div className={"myaccount-body"}>
                 <div className={"myaccount-profile-second"}>
-                    <div className={"myaccount-section1"}>
-                        <h3>My profile</h3>
-                    </div>
+
                     <div className={"myaccount-section2"}>
+                        <div className={"myaccount-section1"}>
+                            <h3>My profile</h3>
+                        </div>
                         <div className={"myaccount-info"}>
                             <div className={"myaccount-part1"}>
                                 <div>

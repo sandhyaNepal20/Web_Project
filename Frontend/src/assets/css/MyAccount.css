@@ -221,12 +221,16 @@
     flex-direction: column;
     row-gap: 50%;
     justify-content: center;
+    margin-left: 63px;
+    margin-top: 80px;
 
 }
 .myaccount-section1 h3{
-    text-align: center;
+    text-align: left;
     color: black;
     font-size: 23px;
+    margin-top: 0px;
+
 }
 .myaccount-info .myaccount-part1 label{
     font-size: 16px;
@@ -275,8 +279,8 @@
 
 }
 .myaccount-buttons button{
-    margin-top: 100px;
-    margin-left: 865px;
+    margin-top: 80px;
+    margin-left: 302px;
     width: 143px;
     font-size: 16px;
     height: 38%;
