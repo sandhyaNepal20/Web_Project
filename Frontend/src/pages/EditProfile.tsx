@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "../assets/css/EditProfile.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
+import "../assets/css/dashboard.css";
 
 const EditProfile: React.FC = () => {
     const [userDetails, setUserDetails] = useState<any>({});
@@ -74,19 +74,24 @@ const EditProfile: React.FC = () => {
                     </a>
                 </div>
                 <div className={"ep-btn_before"}>
-                    <button>Brands</button>
-                    <button>Categories</button>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
+                    <Link to="/dashboard" className="link-button">
+                        <button>Home</button>
+                    </Link>
+                    <Link to="/Aboutus">
+                        <button>About Us</button>
+                    </Link>
 
                 </div>
 
-                
 
                 <div className={"ep-btn-wrapper"}>
-                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
-                    <Link to="/Myaccount"><button>My Account</button></Link>
-                    <Link to="/"><button>Sign Out</button></Link>
+                    <button>Cart</button>
+                    <Link to="/Myaccount">
+                        <button>My Account</button>
+                    </Link>
+                    <Link to="/">
+                        <button>Sign Out</button>
+                    </Link>
 
 
                 </div>
@@ -97,9 +102,10 @@ const EditProfile: React.FC = () => {
                 <div className={"ep-profile-first"}>
                     <div className={"ep-manage-my-account"}>
                         <h1>Manage My Account</h1>
-                        <Link to="/MyAccount"><button>My profile</button></Link>
+                        <Link to="/MyAccount">
+                            <button>My profile</button>
+                        </Link>
                     </div>
-
 
 
                 </div>
@@ -138,64 +144,42 @@ const EditProfile: React.FC = () => {
             </div>
 
 
-            <div className={"ep-footer"}>
-                <div className={"ep-get-help"}>
+            <div className={"db-footer"}>
+                <div className={"home-about-us"}>
+                    <h1>Teddy's Collection</h1>
+                </div>
+
+                <div className={"home-logos"}>
+                    <span>Follow Us</span>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
+
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div className={"db-get-help"}>
                     <h1>GET HELP</h1>
-                    <Link to="/Customercare">
-                        <button>Customer Care</button>
-                    </Link>
-                    <Link to="/Payment">
-                        <button>Payment Options</button>
-                    </Link>
-                    <Link to="/returnandrefundpolicy">
-                        <button>Return and Refund Policy</button>
-                    </Link>
-                    <Link to="/PrivacyPolicy">
-                        <button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
-
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
                 </div>
-                <div className={"ep-about-us"}>
-                    <h1>LUGAHUB</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
-
-
-
-                </div>
-                <div className={"ep-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
-
-
-                </div>
-
             </div>
         </div>
 

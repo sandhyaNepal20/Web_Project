@@ -95,15 +95,15 @@ function AddProduct() {
                         />
 
                     </a>
-                    <span>Bag House</span>
+                    <span>Teddy's Collection</span>
                 </div>
                 <div className={"ap-btn"}>
                     {/*<button className={"product"}><i className="fa-solid fa-clipboard"></i>Products</button>*/}
                     <div className="ap-dropdown">
-                       <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                       <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Taddy's Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Bag</a>
-                            <a href="/admin/addproduct">Add Bag</a>
+                            <a href="/admin/products">View </a>
+                            <a href="/admin/addproduct">Add </a>
 
                         </div>
                     </div>
@@ -131,7 +131,7 @@ function AddProduct() {
             </div>
             <div className={"ap-display"}>
                 <div className={"ap-headers"}>
-                    <h2>Add Bag</h2>
+                    <h2>Add</h2>
 
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -157,13 +157,13 @@ function AddProduct() {
                         </select>
 
                         <div>
-                            <span>Select Bags Image</span>
+                            <span>Select Image</span>
                             <input type="file" {...register("itemImage")} />
                         </div>
                     </div>
                 </div>
                 <div className={"ap-pr-btn"}>
-                    <button type={"submit"}>Add Bags</button>
+                    <button type={"submit"}>Add </button>
                 </div>
                 </form>
                 <ToastContainer autoClose={4000} />

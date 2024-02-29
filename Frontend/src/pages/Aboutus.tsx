@@ -17,13 +17,23 @@ const Aboutus: React.FC = () => {
                     </a>
                 </div>
                 <div className={"au-btn_before"}>
-                    <Link to="/dashboard" className="link-button"><button><i className="fa-solid fa-home home-icon"></i> Home</button></Link>                  
-                    <Link to="/Aboutus"><button><i className="fa-solid fa-info-circle about-icon"></i>About Us</button></Link>
+                    <Link to="/dashboard" className="link-button">
+                        <button> Home</button>
+                    </Link>
+                    <Link to="/Aboutus">
+                        <button>About Us</button>
+                    </Link>
                 </div>
                 <div className={"au-btn-wrapper"}>
-                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i> Cart</button></Link>
-                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
-                    <Link to="/"><button> <i className="fa-solid fa-sign-out"></i>Log Out</button></Link>
+                    <Link to={"/cart"}>
+                        <button> Cart</button>
+                    </Link>
+                    <Link to="/myaccount" className="link-button">
+                        <button>Profile</button>
+                    </Link>
+                    <Link to="/">
+                        <button> Log Out</button>
+                    </Link>
 
 
                 </div>
@@ -31,57 +41,55 @@ const Aboutus: React.FC = () => {
             </div>
             <div className={"au-body"}>
                 <h1>About Us</h1>
-               
-                <h2>Welcome to Bag House</h2>
-                <p>At Bag House, we're passionate about bringing you the finest selection of bags to suit your style and needs. Established with a commitment to quality and convenience, we strive to offer a seamless shopping experience for bag enthusiasts nationwide.</p>
+
+                <h2>Welcome to Teddy's Collection at Sandhya's Shop </h2>
+                <p>At Teddy's Collection, we take immense pride in curating a delightful assortment of teddy bears that
+                    are sure to capture your heart.</p>
                 <h2>Cash on Delivery</h2>
-                <p>We understand the importance of flexibility when it comes to payment methods. That's why we offer the convenience of Cash on Delivery (COD) for your peace of mind. With COD, you can shop with confidence, knowing that you only pay when your order reaches your doorstep.</p>
+                <p>Passionate about spreading joy and warmth through these fluffy friends, Teddy's Collection offers a
+                    diverse range of teddy bears to suit every taste and occasion. Whether you're looking for a charming
+                    gift for a loved one or a delightful addition to your own collection, we have the perfect teddy bear
+                    waiting for you. That's why we offer the convenience of Cash on Delivery (COD) for your peace of
+                    mind. With COD, you can shop with confidence, knowing that you only pay when your order reaches your
+                    doorstep.</p>
             </div>
 
 
+            <div className={"db-footer"}>
+                <div className={"home-about-us"}>
+                    <h1>Teddy's Collection</h1>
+                </div>
 
+                <div className={"home-logos"}>
+                    <span>Follow Us</span>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
 
-            <div className={"au-footer"}>
-                <div className={"au-get-help"}>
-                    <h1>Contact Us</h1>
-                        <p>Email: baghouse@gmail.com</p>
-                    <span>@2024 BagHouse Pvt. Ltd. All Rights Reserved</span>
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+
 
                 </div>
-                <div className={"au-about-us"}>
-                    <h1>Bag House</h1>
 
-
-
-
-                </div>
-                <div className={"au-logos"}>
-                    <span>Follow Us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
+                <div className={"db-get-help"}>
+                    <h1>GET HELP</h1>
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
                 </div>
             </div>
         </div>

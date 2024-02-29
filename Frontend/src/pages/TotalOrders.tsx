@@ -45,14 +45,14 @@ function TotalOrders() {
                         />
 
                     </a>
-                    <span>Bag House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"to-btn"}>
                     <div className="ap-dropdown">
-                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Teddy'sDetails<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Bag</a>
-                            <a href="/admin/addproduct">Add Bag</a>
+                            <a href="/admin/products">View </a>
+                            <a href="/admin/addproduct">Add </a>
 
                         </div>
                     </div>
@@ -85,7 +85,7 @@ function TotalOrders() {
                     <tr>
                         <th>S.N</th>
                         <th>Customer Details</th>
-                        <th>Bag Details</th>
+                        <th>Teddy's Details</th>
                         <th>Total Price</th>
                         <th>Delivery Date</th>
                         <th>Delivery Status</th>
@@ -101,7 +101,7 @@ function TotalOrders() {
             </td>
             <td>
                 <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.item.itemName} />
-                <p>Bag:{i?.item.itemName}</p>
+                <p>Teddy's:{i?.item.itemName}</p>
                 <p>Quantity: {i?.quantity}</p>
                 <p>Price: Rs. {i?.item.itemPerPrice}</p>
             </td>

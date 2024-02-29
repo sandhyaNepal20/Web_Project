@@ -152,25 +152,25 @@
 }
 .c-logos img{
     padding: 8px}
-.c-get-help button{
-    background-color: black;
-    color: grey;
-    font-size: 14px;
-    border: none;
+/*.c-get-help button{*/
+/*    background-color: black;*/
+/*    color: grey;*/
+/*    font-size: 14px;*/
+/*    border: none;*/
 
-}
-.c-get-help button:hover {
-    color: white; /* Change to the desired color on hover */
-}
-.c-get-help span{
-    font-size: 13px;
-    margin-top: 15px;
-    color: lightgrey;
-    /*padding-bottom: -50px;*/
-    /*margin-bottom: -60px;*/
+/*}*/
+/*.c-get-help button:hover {*/
+/*    color: white; !* Change to the desired color on hover *!*/
+/*}*/
+/*.c-get-help span{*/
+/*    font-size: 13px;*/
+/*    margin-top: 15px;*/
+/*    color: lightgrey;*/
+/*    !*padding-bottom: -50px;*!*/
+/*    !*margin-bottom: -60px;*!*/
 
 
-}
+/*}*/
 .c-about-us button{
     background-color: black;
     color: grey;
@@ -199,10 +199,10 @@
     color: white;
     font-size: 15px;
 }
-.c-get-help h1{
-    color: white;
-    font-size: 15px;
-}
+/*.c-get-help h1{*/
+/*    color: white;*/
+/*    font-size: 15px;*/
+/*}*/
 
 .c-body {
     height: 150vh;

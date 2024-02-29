@@ -55,14 +55,14 @@ function AddCategory() {
                          width={100}
                          alt={"logo"}
                     />
-                    <span>Bag House</span>
+                    <span>Teddy's House</span>
                 </div>
                 <div className={"ab-btn"}>
                     <div className="ap-dropdown">
-                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Teddy's Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Bag</a>
-                            <a href="/admin/addproduct">Add Bag</a>
+                            <a href="/admin/products">View </a>
+                            <a href="/admin/addproduct">Add </a>
 
                         </div>
                     </div>

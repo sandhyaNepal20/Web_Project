@@ -51,28 +51,37 @@ function Dashboard() {
                     </a>
                 </div>
                 <div className={"db-btn_before"}>
-                    <Link to="/dashboard" className="link-button"><button><i className="fa-solid fa-home home-icon"></i>Home</button></Link>                  
-                    <Link to="/Aboutus"><button><i className="fa-solid fa-info-circle about-icon"></i>About Us</button></Link>
+                    <Link to="/dashboard" className="link-button">
+                        <button>Home</button>
+                    </Link>
+                    <Link to="/Aboutus">
+                        <button>About Us</button>
+                    </Link>
                 </div>
                 <div className={"db-btn-wrapper"}>
-                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
+                    <Link to={"/cart"}>
+                        <button>Cart</button>
+                    </Link>
+                    <Link to="/myaccount" className="link-button">
+                        <button>Profile</button>
+                    </Link>
                     <Link to="/">
-                        <button onClick={()=>{
+                        <button onClick={() => {
                             localStorage.clear();
-                            window.location.href="/login"
-                        }}>Sign Out</button>
+                            window.location.href = "/login"
+                        }}>Sign Out
+                        </button>
                     </Link>
                 </div>
 
                 <div className={"s-searchbar"}>
-                   <input
-                       type={"text"}
-                       placeholder={"Search Bags"}
-                       onChange={(e) => {
-                           setSearchData(e.target.value);
-                       }}
-                   />
+                    <input
+                        type={"text"}
+                        placeholder={"Search Teddy's"}
+                        onChange={(e) => {
+                            setSearchData(e.target.value);
+                        }}
+                    />
                 </div>
                 <div className={"s-search_button"}>
                     <button type="submit" onClick={handleSearch}>
@@ -80,26 +89,28 @@ function Dashboard() {
                     </button>
                 </div>
 
-                
+
             </div>
             <div className={"db-body"}>
                 <div className={"db-dash1"}>
-                <div className={"db-img-dash1"}>
-                    <img
-                        className="d-block w-100"
-                        src="images/bg1.jpg"
-                        alt="Pic"
-                    />
-                </div>
+                    <div className={"db-img-dash1"}>
+                        <img
+                            className="d-block w-100"
+                            src="images/tttt.jpg"
+                            alt="Pic"
+                        />
+                    </div>
 
-                    
 
                     <div className={"db-product-dash1"}>
                         {searchData && searchByName?.data && searchByName.data.length > 0 ? (
                             searchByName.data.map((i) => (
-                                <div onClick={() => { navigate("/products/" + i?.id) }} className={"item-section"} key={i.itemId}>
+                                <div onClick={() => {
+                                    navigate("/products/" + i?.id)
+                                }} className={"item-section"} key={i.itemId}>
                                     <div className={"item-image"}>
-                                        <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
+                                        <img src={"data:image/png;base64, " + i?.itemImage} width={100}
+                                             alt={i?.itemName}/>
                                     </div>
 
                                     <div className={"item-info"}>
@@ -124,9 +135,12 @@ function Dashboard() {
                             ) : (
                                 data?.data.length > 0 ? (
                                     data?.data.slice(0, 12).map((i) => (
-                                        <div onClick={() => { navigate("/products/" + i?.id) }} className={"item-section"} key={i.itemId}>
+                                        <div onClick={() => {
+                                            navigate("/products/" + i?.id)
+                                        }} className={"item-section"} key={i.itemId}>
                                             <div className={"item-image"}>
-                                                <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
+                                                <img src={"data:image/png;base64, " + i?.itemImage} width={100}
+                                                     alt={i?.itemName}/>
                                             </div>
 
                                             <div className={"item-info"}>
@@ -151,7 +165,6 @@ function Dashboard() {
                             )
                         )}
                     </div>
-
 
 
                 </div>
@@ -182,49 +195,43 @@ function Dashboard() {
                 {/* </div> */}
             </div>
             <div className={"db-footer"}>
-                <div className={"db-get-help"}>
-                    <h1>GET HELP</h1>
-                    <p>Email : pandeybibek9849@gmail.com</p>
-                    <p>Contact Number : 9818619735</p>
-                    <span>@2024 Bag Pvt. Ltd. All Rights Reserved</span>
-
-                </div>
                 <div className={"home-about-us"}>
-                    <h1>Bag House</h1>
-                    
+                    <h1>Teddy's Collection</h1>
                 </div>
+
                 <div className={"home-logos"}>
                     <span>Follow Us</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
 
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
 
 
                 </div>
 
+                <div className={"db-get-help"}>
+                    <h1>GET HELP</h1>
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
+                </div>
             </div>
+
         </div>
 
 

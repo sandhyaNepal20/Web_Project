@@ -43,13 +43,23 @@ const MyAccount: React.FC = () => {
                     </a>
                 </div>
                 <div className={"myaccount-btn_before"}>
-                    <Link to="/dashboard" className="link-button"><button><i className="fa-solid fa-home home-icon"></i>Home</button></Link>                  
-                    <Link to="/Aboutus"><button><i className="fa-solid fa-info-circle about-icon"></i>About Us</button></Link>
+                    <Link to="/dashboard" className="link-button">
+                        <button>Home</button>
+                    </Link>
+                    <Link to="/Aboutus">
+                        <button>About Us</button>
+                    </Link>
                 </div>
                 <div className={"myaccount-btn-wrapper"}>
-                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
-                    <Link to="/" className="logout-link"><button><i className="fa-solid fa-sign-out"></i> Log Out</button></Link>       
+                    <Link to={"/cart"}>
+                        <button>Cart</button>
+                    </Link>
+                    <Link to="/myaccount" className="link-button">
+                        <button>Profile</button>
+                    </Link>
+                    <Link to="/" className="logout-link">
+                        <button> Log Out</button>
+                    </Link>
                 </div>
                 {/* <div className={"myaccount-searchbar"}>
                     <input type={"text"} placeholder={"Search Bags"} />
@@ -57,7 +67,7 @@ const MyAccount: React.FC = () => {
                 <div className={"myaccount-search_button"}>
                     <button><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div> */}
-                
+
             </div>
 
             <div className={"myaccount-body"}>
@@ -70,69 +80,65 @@ const MyAccount: React.FC = () => {
                             <div className={"myaccount-part1"}>
                                 <div>
                                     <label><i className="fa-solid fa-user user-icon"></i>First Name:</label>
-                                    <input type="text" value={userDetails.firstName} readOnly />
+                                    <input type="text" value={userDetails.firstName} readOnly/>
                                 </div>
                                 <div>
-                                    <label>  <i className="fa-solid fa-user user-icon"></i>Last Name:</label>
-                                    <input type="text" value={userDetails.lastName} readOnly />
+                                    <label> <i className="fa-solid fa-user user-icon"></i>Last Name:</label>
+                                    <input type="text" value={userDetails.lastName} readOnly/>
                                 </div>
                                 <div>
-                                    <label>  <i className="fa-solid fa-envelope email-icon"></i>Email Address:</label>
-                                    <input type="text" value={userDetails.email} readOnly />
+                                    <label> <i className="fa-solid fa-envelope email-icon"></i>Email Address:</label>
+                                    <input type="text" value={userDetails.email} readOnly/>
                                 </div>
                             </div>
                         </div>
                         <div className={"myaccount-buttons"}>
-                            <Link to="/EditProfile" className="link-button"><button><i className="fa-solid fa-edit edit-icon"></i>Edit Profile</button></Link>
+                            <Link to="/EditProfile" className="link-button">
+                                <button><i className="fa-solid fa-edit edit-icon"></i>Edit Profile</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className={"db-footer"}>
+                <div className={"home-about-us"}>
+                    <h1>Teddy's Collection</h1>
+                </div>
 
-            <div className={"myaccount-footer"}>
-                <div className={"myaccount-get-help"}>
+                <div className={"home-logos"}>
+                    <span>Follow Us</span>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
+
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div className={"db-get-help"}>
                     <h1>GET HELP</h1>
-                    <Link to="/Customercare"><button>Customer Care</button></Link>
-                    <Link to="/Payment"><button>Payment Options</button></Link>
-                    <Link to="/returnandrefundpolicy"><button>Return and Refund Policy</button></Link>
-                    <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
-                </div>
-                <div className={"myaccount-about-us"}>
-                    <h1>LUGAHUB</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
-                </div>
-                <div className={"myaccount-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Instagram"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="Threads"
-                        />
-                    </a>
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
                 </div>
             </div>
+
+
         </div>
     );
 };

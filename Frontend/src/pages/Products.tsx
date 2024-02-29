@@ -86,14 +86,14 @@ function Products() {
 
                     </a>
 
-                    <span>Bag House</span>
+                    <span>Teddy's House</span>
                 </div>
                 <div className={"Pr-btn"}>
                     <div className="ap-dropdown">
-                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Teddy's Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Bag</a>
-                            <a href="/admin/addproduct">Add Bag</a>
+                            <a href="/admin/products">View </a>
+                            <a href="/admin/addproduct">Add </a>
 
                         </div>
                     </div>
@@ -122,14 +122,14 @@ function Products() {
                 </div>
             </div>
             <div className={"Pr-display"}>
-                <h2>View Bag</h2>
+                <h2>View </h2>
                 <table>
                     <thead>
                     <tr>
-                        <th>Bag Name</th>
-                        <th>Bag Image</th>
-                        <th>Bag Description</th>
-                        <th>Bag Price</th>
+                        <th>Teddy's Name</th>
+                        <th>Teddy's Image</th>
+                        <th>Teddy's Description</th>
+                        <th>Teddy's Price</th>
                         <th>Quantity</th>
                         <th>Brand</th>
                         <th>Category</th>

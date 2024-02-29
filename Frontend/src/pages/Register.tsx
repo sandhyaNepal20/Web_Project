@@ -5,7 +5,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-import Baglogo  from "../../images/Teddy.png"
+import Baglogo  from "../../images/logo.png"
 // import "../assets/css/Login.css"
 
 interface FormData {

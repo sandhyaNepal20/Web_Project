@@ -148,17 +148,25 @@ console.log(data)
                         />
                     </a>
                 </div>
-                
+
                 <div className={"c-btn_before"}>
-                    <Link to="/dashboard" className="link-button"><button><i className="fa-solid fa-home home-icon"></i>Home</button></Link>                  
-                    <Link to="/Aboutus"><button><i className="fa-solid fa-info-circle about-icon"></i>About Us</button></Link>
+                    <Link to="/dashboard" className="link-button">
+                        <button>Home</button>
+                    </Link>
+                    <Link to="/Aboutus">
+                        <button>About Us</button>
+                    </Link>
                 </div>
                 <div className={"c-btn-wrapper"}>
-                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
-                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
-                    <Link to="/"><button> <i className="fa-solid fa-sign-out"></i>Log Out</button></Link>
+                    <button>Cart</button>
+                    <Link to="/myaccount" className="link-button">
+                        <button>Profile</button>
+                    </Link>
+                    <Link to="/">
+                        <button> Log Out</button>
+                    </Link>
 
-                </div>          
+                </div>
             </div>
             <div className={"c-body"}>
                 <div className={"c-container"}>
@@ -186,7 +194,8 @@ console.log(data)
                                 {data?.data.map((i) => (
                                     <tr key={i.id}>
                                         <td>
-                                            <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
+                                            <img src={"data:image/png;base64, " + i?.itemImage} width={100}
+                                                 alt={i?.itemName}/>
                                         </td>
                                         <td><p>{i?.item.itemName}</p></td>
                                         <td><p>{i?.item.itemDescription}</p></td>
@@ -196,7 +205,8 @@ console.log(data)
                                         <td><p>{i?.quantity}</p></td>
                                         <td><p>Rs. {i?.quantity * i?.item.itemPerPrice}</p></td>
                                         <td>
-                                            <button className={"c-delete"} onClick={() => handleDelete(i?.id)}><i className="fa-solid fa-trash"></i></button>
+                                            <button className={"c-delete"} onClick={() => handleDelete(i?.id)}><i
+                                                className="fa-solid fa-trash"></i></button>
                                         </td>
                                     </tr>
                                 ))}
@@ -208,7 +218,9 @@ console.log(data)
                         <div className={"no-item"}>
                             <img src={"../images/empty-cart.png"} alt={"empty-cart"} width={100}/>
                             <p>There are no items in your cart.</p>
-                            <Link to="/dashboard"><button>Continue Shopping</button></Link>
+                            <Link to="/dashboard">
+                                <button>Continue Shopping</button>
+                            </Link>
                         </div>
                     )}
                     {data?.data.length > 0 && (
@@ -235,7 +247,9 @@ console.log(data)
                                 <tbody>
                                 <tr className={"proceed"}>
                                     <th></th>
-                                    <td><button onClick={()=>handleCheckout(data?.data)}>Check Out</button></td>
+                                    <td>
+                                        <button onClick={() => handleCheckout(data?.data)}>Check Out</button>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -244,58 +258,42 @@ console.log(data)
                     <ToastContainer autoClose={4000}/>
                 </div>
             </div>
-            <div className={"c-footer"}>
-                <div className={"c-get-help"}>
+            <div className={"db-footer"}>
+                <div className={"home-about-us"}>
+                    <h1>Teddy's Collection</h1>
+                </div>
+
+                <div className={"home-logos"}>
+                    <span>Follow Us</span>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
+
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div className={"db-get-help"}>
                     <h1>GET HELP</h1>
-                    <Link to="/Customercare"><button>Customer Care</button></Link>
-                    <Link to="/Payment"><button>Payment Options</button></Link>
-                    <Link to="/returnandrefundpolicy"><button>Return and Refund Policy</button></Link>
-                    <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
-
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
                 </div>
-                <div className={"c-about-us"}>
-                    <h1>LUGAHUB</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
-
-
-
-
-                </div>
-                <div className={"c-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
-
-
-                </div>
-
             </div>
         </div>
 

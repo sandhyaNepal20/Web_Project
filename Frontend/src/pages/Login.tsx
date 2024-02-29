@@ -81,7 +81,7 @@ const Login: React.FC = () => {
                 <div className={"login-header"}>
                     <div className={"login-logo"}>
                         <img
-                            src={"images/Teddy.png"}
+                            src={"images/logo.png"}
                             alt={"loginlogo"}
                         />
                     </div>

@@ -217,12 +217,12 @@
 .p{
     color:white;
 }
-.au-get-help h1{
-    margin-top: -50px;
-    margin-left: 164px;
-    color: white;
-    font-size: 15px;
-}
+/*.au-get-help h1{*/
+/*    margin-top: -50px;*/
+/*    margin-left: 164px;*/
+/*    color: white;*/
+/*    font-size: 15px;*/
+/*}*/
 .au-body h2{
     font-size: 20px;
 }
@@ -230,3 +230,35 @@
 
 
 
+
+.db-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.home-about-us h1 {
+    color: white;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+}
+
+.home-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.db-get-help h1 {
+    color: white;
+}
+
+.home-logos span,
+.home-logos a img {
+    filter: invert(1); /* Invert color for images and text */
+}
