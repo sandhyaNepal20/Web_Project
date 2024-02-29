@@ -232,7 +232,7 @@
 }
 .db-img-dash1 img {
     width: 90%;
-    height: 80vh;
+    height: 95vh;
 }
 .db-img-dash2 {
     width: 95%;
@@ -248,9 +248,9 @@
 .db-product-dash1{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 50px;
+    column-gap: 59px;
     padding-left: 45px;
-    padding-top: 8px;
+    padding-top: 88px;
     margin-left: 80px;
     width: 148.5vw;
     height: 105vh;
