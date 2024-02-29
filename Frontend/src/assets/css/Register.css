@@ -1,0 +1,133 @@
+.register-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 12;
+}
+
+.r-Signup-form {
+    margin-left: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
+    height: 94%;
+    width: 24%;
+    /* background-color: rgb(0 0 0 / 37%); */
+    /* border: 2px solid white; */
+    border-radius: 40px;
+
+}
+
+.r-Head {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    row-gap: 30px;
+    margin-top: -70px;
+    height: 20%;
+}
+
+.r-Head img {
+    height:130%;
+    width: auto;
+}
+
+.r-Head h1 {
+    font-size: 33px;
+    margin-top: -54px;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+}
+
+.r-Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.r-Body input{
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 40px;
+    font-size:15px ;
+    color: rgb(13, 12, 12);
+    height: 45px;
+    width: 281px;
+    text-indent: 10px;
+}
+
+.r-Body input::placeholder{
+    color: rgb(4, 4, 4);
+}
+
+.r-Footer{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.r-button{
+    margin-top: 12px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.r-button button{
+    width: 120px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+}
+
+.r-login-link {
+    margin-left: 22px;
+    color: black;
+}
+.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+.r-login-link a {
+    color:rgb(15, 15, 15);
+}
+
+.r-login-link label{
+    color: rgb(6, 5, 5);
+}
+
+.r-login-link a:hover {
+    color:gray;
+}
+
+.r-button button:hover {
+    background-color: grey;
+}
+
+.r-checkbox{
+    margin-left: 27px;
+}
+
+@media screen and (max-width: 600px) {
+    .r-Signup-form {
+        width: 90%;
+        max-width: none;
+    }
+}
