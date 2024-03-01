@@ -96,7 +96,7 @@ function Dashboard() {
                     <div className={"db-img-dash1"}>
                         <img
                             className="d-block w-100"
-                            src="images/b1.jpg"
+                            src="images/rose.png"
                             alt="Pic"
                         />
                     </div>

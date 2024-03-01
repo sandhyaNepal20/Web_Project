@@ -106,51 +106,51 @@
 .ck-btn_before button i {
     font-size: 20px; /* Adjust the font size of the icon */
     margin-right: 5px;}/* Add spacing between the icon and text */
-.ck-container .ck-footer{
+/*.ck-container .ck-footer{*/
 
 
-    display: flex;
-    height:40% ;
-    background: black;
-    /*margin-top: 20px;*/
-    font-size: 5px;
-    /*align-items: flex-end;*/
-    justify-content: space-around;
+/*    display: flex;*/
+/*    height:40% ;*/
+/*    background: black;*/
+/*    !*margin-top: 20px;*!*/
+/*    font-size: 5px;*/
+/*    !*align-items: flex-end;*!*/
+/*    justify-content: space-around;*/
 
-}
-.ck-footer .ck-get-help{
-    display: flex;
-    flex-direction: column;
+/*}*/
+/*.ck-footer .ck-get-help{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
 
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 35px;
+/*    justify-content: center;*/
+/*    align-items: flex-start;*/
+/*    margin-top: 35px;*/
 
 
-}
-.ck-footer .ck-about-us{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: -75px;
+/*}*/
+/*.ck-footer .ck-about-us{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*    justify-content: center;*/
+/*    margin-top: -75px;*/
 
-}
-.ck-footer .ck-logos{
-    display: flex;
-    align-items: center;
-    /*justify-content: space-evenly;*/
+/*}*/
+/*.ck-footer .ck-logos{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    !*justify-content: space-evenly;*!*/
 
-}
-.ck-logos img{
-    padding: 8px}
-.ck-get-help button{
-    background-color: black;
-    color: grey;
-    font-size: 14px;
-    border: none;
+/*}*/
+/*.ck-logos img{*/
+/*    padding: 8px}*/
+/*.ck-get-help button{*/
+/*    background-color: black;*/
+/*    color: grey;*/
+/*    font-size: 14px;*/
+/*    border: none;*/
 
-}
+/*}*/
 .ck-get-help button:hover {
     color: white; /* Change to the desired color on hover */
 }
@@ -194,7 +194,7 @@
 .ck-body .descc{
     margin-top: 10px;
     height: 97vh;
-    margin-left: 767px;
+    margin-left: 200px;
     width: 80vw;
     color: black;
     display: flex;
@@ -350,3 +350,35 @@
 }
 
 
+
+.db-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.home-about-us h1 {
+    color: white;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+}
+
+.home-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.db-get-help h1 {
+    color: white;
+}
+
+.home-logos span,
+.home-logos a img {
+    filter: invert(1); /* Invert color for images and text */
+}

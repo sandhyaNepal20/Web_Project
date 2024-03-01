@@ -23,7 +23,7 @@ function Users() {
                         />
 
                     </a>
-                    <span>Teddy's House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"u-btn"}>
                     <div className="ap-dropdown">

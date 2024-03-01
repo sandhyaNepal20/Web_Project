@@ -135,143 +135,143 @@ const Checkout: React.FC = () => {
                     </a>
                 </div>
                 <div className={"ck-btn_before"}>
-                    <Link to={"/dashboard"}><button>Home</button></Link>
+                    <Link to={"/dashboard"}>
+                        <button>Home</button>
+                    </Link>
                     <Link to="/Aboutus">
                         <button>About Us</button>
                     </Link>
                 </div>
                 <div className={"ck-btn-wrapper"}>
-                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
+                    <Link to={"/cart"}>
+                        <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
+                    </Link>
+                    <Link to="/myaccount" className="link-button">
+                        <button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button>
+                    </Link>
 
                     <Link to="/">
-                        <button onClick={()=>{
+                        <button onClick={() => {
                             localStorage.clear();
-                            window.location.href="/login"
-                        }}>Sign Out</button>
+                            window.location.href = "/login"
+                        }}>Sign Out
+                        </button>
                     </Link>
                 </div>
-                
 
-                
+
             </div>
             <div className={"ck-body"}>
                 <form onSubmit={handleSubmit(onsubmit)}>
-                <div className={"descc"}>
-                    <div className={"ck-image-sec"}>
-                        <div className={"image-sec"}>
-                            {dataById?.data && dataById?.data.itemImage && (
-                                <img
-                                    src={`data:image/png;base64, ${dataById.data.itemImage}`}
-                                    width={100}
-                                    alt="itemImage"
-                                    {...register("itemImage")}
-                                />
-                            )}
-                        </div>
-                        <div className={"ck-buttons"}>
-                            <button className={"add"} onClick={buttonclick}>Add to cart</button>
-                            {/* <button className="wish" onClick={handleButtonClick}>
+                    <div className={"descc"}>
+                        <div className={"ck-image-sec"}>
+                            <div className={"image-sec"}>
+                                {dataById?.data && dataById?.data.itemImage && (
+                                    <img
+                                        src={`data:image/png;base64, ${dataById.data.itemImage}`}
+                                        width={100}
+                                        alt="itemImage"
+                                        {...register("itemImage")}
+                                    />
+                                )}
+                            </div>
+                            <div className={"ck-buttons"}>
+                                <button className={"add"} onClick={buttonclick}>Add to cart</button>
+                                {/* <button className="wish" onClick={handleButtonClick}>
                                 Favourite
                                 <i className="fa-solid fa-heart" style={{ color: heartColor }} ></i>
                             </button> */}
+                            </div>
+
+
                         </div>
+                        <form>
+                            <div className={"ck-description"}>
+                                <div className={"desc1"}>
+                                    <div className={"desc6"}>
+                                        <input type={"text"}{...register("itemName")} disabled/>
+                                    </div>
+                                    <div className={"desc7"}>
+                                        <input type={"text"} {...register("itemDescription")} disabled/>
+                                    </div>
+                                    <div className={"desc8"}>
+                                        <p>Rs. <input {...register("itemPerPrice")} disabled/></p>
+                                    </div>
+                                </div>
+                                <div className={"desc2"}>
+                                    <div className={"desc3"}>
+                                        <p>Color:</p>
+                                        <div className={"coloroptions"}>
+                                            <span onClick={() => handleColorSelection('Black')}>Black</span>
+                                            <span onClick={() => handleColorSelection('White')}>White</span>
+                                            <span onClick={() => handleColorSelection('Grey')}>Grey</span>
+                                            <span onClick={() => handleColorSelection('Pink')}>Pink</span>
+                                        </div>
+                                    </div>
+                                    <div className={"desc4"}>
+                                        <p>Size:</p>
+                                        <div className={"sizeoptions"}>
+                                            <span onClick={() => handleSizeSelection('S')}
+                                                  className={selectedSize === 'S' ? 'selectedSize' : ''}>S</span>
+                                            <span onClick={() => handleSizeSelection('M')}
+                                                  className={selectedSize === 'M' ? 'selectedSize' : ''}>M</span>
+                                            <span onClick={() => handleSizeSelection('L')}
+                                                  className={selectedSize === 'L' ? 'selectedSize' : ''}>L</span>
+                                        </div>
+                                    </div>
+                                    <div className={"desc5"}>
+                                        <p>Quantity:</p>
+                                        <div className={"quantity-counter"}>
+                                            <button type="button" onClick={handleDecrement}>-</button>
+                                            <span>{quantity}</span>
+                                            <button type="button" onClick={handleIncrement}>+</button>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
 
+                        </form>
+                        <ToastContainer/>
                     </div>
-                    <form>
-                    <div className={"ck-description"}>
-                        <div className={"desc1"}>
-                            <div className={"desc6"}>
-                                <input type={"text"}{...register("itemName")} disabled />
-                            </div>
-                            <div className={"desc7"}>
-                                <input type={"text"} {...register("itemDescription")} disabled/>
-                            </div>
-                            <div className={"desc8"}>
-                                <p>Rs. <input {...register("itemPerPrice")} disabled /></p>
-                            </div>
-                        </div>
-                        <div className={"desc2"}>
-                            <div className={"desc3"}>
-                                <p>Color:</p>
-                                <div className={"coloroptions"}>
-                                    <span onClick={() => handleColorSelection('Black')}>Black</span>
-                                    <span onClick={() => handleColorSelection('White')}>White</span>
-                                    <span onClick={() => handleColorSelection('Grey')}>Grey</span>
-                                    <span onClick={() => handleColorSelection('Pink')}>Pink</span>
-                                </div>
-                            </div>
-                            <div className={"desc4"}>
-                                <p>Size:</p>
-                                <div className={"sizeoptions"}>
-                                    <span onClick={() => handleSizeSelection('S')}  className={selectedSize === 'S' ? 'selectedSize' : ''}>S</span>
-                                    <span onClick={() => handleSizeSelection('M')}  className={selectedSize === 'M' ? 'selectedSize' : ''}>M</span>
-                                    <span onClick={() => handleSizeSelection('L')}  className={selectedSize === 'L' ? 'selectedSize' : ''}>L</span>
-                                </div>
-                            </div>
-                            <div className={"desc5"}>
-                                <p>Quantity:</p>
-                                <div className={"quantity-counter"}>
-                                    <button type="button" onClick={handleDecrement}>-</button>
-                                    <span>{quantity}</span>
-                                    <button  type="button" onClick={handleIncrement}>+</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    </form>
-                    <ToastContainer/>
-                </div>
                 </form>
             </div>
-            <div className={"ck-footer"}>
-                <div className={"ck-get-help"}>
+            <div className={"db-footer"}>
+                <div className={"home-about-us"}>
+                    <h1>Teddy's Collection</h1>
+                </div>
+
+                <div className={"home-logos"}>
+                    <span>Follow Us</span>
+                    <div className="social-icons">
+                        <a href="https://www.facebook.com/sandhya.nepal.338"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/fb.png"}
+                                alt="Facebook"
+                            />
+                        </a>
+
+                        <a href="https://www.instagram.com/sandhyanepal94/"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                width={43}
+                                src={"images/insta.png"}
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div className={"db-get-help"}>
                     <h1>GET HELP</h1>
-                    <Link to="/Customercare"><button>Customer Care</button></Link>
-                    <Link to="/Payment"><button>Payment Options</button></Link>
-                    <Link to="/ReturnandRefund"><button>Return and Refund Policy</button></Link>
-                    <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
+                    <p>Email : nsandhya192@@gmail.com</p>
+                    <p>Contact Number : 9810092826</p>
+                    <span>@2024 Teddy's Collection Pvt. Ltd. All Rights Reserved</span>
                 </div>
-                <div className={"ck-about-us"}>
-                    <h1>LUGAHUB</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
-                </div>
-                <div className={"ck-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/fb.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
-                </div>
-
             </div>
         </div>
 

@@ -62,7 +62,7 @@ function AddBrand() {
                         />
 
                     </a>
-                    <span>Teddy's House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"ac-btn"}>
                     <div className="ap-dropdown">

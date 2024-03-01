@@ -55,7 +55,7 @@ function AddCategory() {
                          width={100}
                          alt={"logo"}
                     />
-                    <span>Teddy's House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"ab-btn"}>
                     <div className="ap-dropdown">

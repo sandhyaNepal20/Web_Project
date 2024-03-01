@@ -8,7 +8,8 @@
 }
 .vc-buttons{
     width: 17vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px darkgray;
+    background-color: darkgray;
 
 
 }
@@ -21,7 +22,7 @@
 }
 .vc-btn button{
     text-align: left;
-    background-color: white;
+    background-color: darkgray;
     color: black;
 }
 .vc-btn button i{

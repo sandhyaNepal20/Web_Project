@@ -95,7 +95,7 @@ function AddProduct() {
                         />
 
                     </a>
-                    <span>Teddy's Collection</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"ap-btn"}>
                     {/*<button className={"product"}><i className="fa-solid fa-clipboard"></i>Products</button>*/}

@@ -78,7 +78,7 @@ function ViewBrand() {
                          width={100}
                          alt={"logo"}
                     />
-                    <span>Teddy's House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"vb-btn"}>
                     <div className="ap-dropdown">

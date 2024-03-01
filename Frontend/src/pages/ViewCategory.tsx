@@ -84,7 +84,7 @@ function ViewCategory() {
                         />
 
                     </a>
-                    <span>Teddy's House</span>
+                    <span>Teddy'sCollection</span>
                 </div>
                 <div className={"vc-btn"}>
                     <div className="ap-dropdown">
