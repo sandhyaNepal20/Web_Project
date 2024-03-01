@@ -1,1 +1,1 @@
-MY Teddy's Collection
+MY TEDDY'S COLLECTION
